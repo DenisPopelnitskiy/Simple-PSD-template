@@ -159,6 +159,15 @@ video {
     margin-right: 73px;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:before {
+    content: url("../img/plus_icon.png");
+    margin-right: 5px; 
+}
+
 .screenshots {
     width: 100%;
     height: 345px;
