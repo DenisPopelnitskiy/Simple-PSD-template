@@ -12,8 +12,15 @@ body {
 
 header {
     width: 100%;
-    height: 330px; /*??если не задавать высоту, то при float блок header становится 0 по высоте? как быть?*/
     background-color: #445162;
+}
+
+.clearfix:after {       /*Решение, чтобы родительский блок header не схлопывался по высоте при использовании float внутри него*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 .productName {
