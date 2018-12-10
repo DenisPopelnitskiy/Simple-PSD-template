@@ -51,7 +51,6 @@ h1 {
 }
 
 .headerListElement {
-    /*margin-left: 4  0px;*/
     list-style: none;
     list-style-image: url("../img/check icon.png");
     list-style-position: inside;
