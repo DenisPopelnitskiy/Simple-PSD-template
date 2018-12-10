@@ -12,8 +12,15 @@ body {
 
 header {
     width: 100%;
-    height: 330px; /*??если не задавать высоту, то при float блок header становится 0 по высоте? как быть?*/
     background-color: #445162;
+}
+
+.clearfix:after {       /*Решение, чтобы родительский блок не схлопывался по высоте при использовании float внутри него*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 .productName {
@@ -22,9 +29,11 @@ header {
 }
 
 h1 {
-    font-size: 42px;
-    font-family: "Arial"; /*непонятно как получить шрифт как в макете?*/
+    font-size: 60px;
+    font-family: "Arial";
     color: white;
+    font-weight: 400;
+    text-align: left;
     padding-left: 50px;
     padding-top: 50px;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
@@ -34,25 +43,33 @@ h1 {
     font-size: 20px;
     font-family: "Arial";
     color: white;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-    padding: 40px 0 55px 50px;
+    padding: 51px 0 51px 50px;
 }
 
 .headerListElement {
-    padding: 5px 0;
+    /*margin-left: 4  0px;*/
     list-style: none;
+    list-style-image: url("../img/check icon.png");
+    list-style-position: inside;
 }
 
-.headerListElement:before {
+/*.headerListElement:before {
     content: url("../img/check icon.png"); /*как позиционировать текст и изображение?*/
-}
+    /*position: ansolute;
+    margin-left: -10px;
+}*/
 
 .headerImage {
-    width: 470px;
-    height: 215px;
+    display: block;
+    width: 469px;
+    height: 214px;
     background-color: white;
-    margin-right: 20px;
-    margin-top: 65px;
+    margin-right: 50px;
+    margin-top: 50px;
     float: right;
 }
 
@@ -62,20 +79,120 @@ main {
 
 .aboutYourProduct {
     width: 100%;
-    height: 345px; /*высота временно, для разметки макета*/
     background-color: #fff;
+}
+
+.aboutYourProductText {
+    width: 660px;
+    float: left;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Arial";
+    color: #445161;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.aboutYourProductParagraph {
+    font-size: 16px;
+    font-family: "Arial";
+    color: #333;
+    line-height:24px;
+    font-weight: 400;
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+video {
+    width: 430px;
+    height: 245px;
+    background-color: rgb(68, 81, 97);
+    margin: 50px 50px 50px 0;
+    float: right;
 }
 
 .dignityAndPluses {
     width: 100%;
-    height: 345px;
     background-color: #f5f5f5;
+}
+
+.dignityAndPlusesProduct {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Arial";
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-top: 50px;
+    margin-bottom: 29px;
+}
+
+.dignity {
+    font-family: "Arial";
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 526px;
+    padding-bottom: 55px;
+    float: left;
+    margin-left: 91px;
+}
+
+.pluses {
+    font-family: "Arial";
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 526px;
+    padding-bottom: 55px;
+    float: right;
+    margin-right: 73px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:before {
+    content: url("../img/plus_icon.png");
+    margin-right: 5px; 
+}
+
+summary {
+    outline: none;
 }
 
 .screenshots {
     width: 100%;
     height: 345px;
     background-color: #fff;
+}
+
+.scrinshots_header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Arial";
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-top: 50px;
+    margin-bottom: 29px;
 }
 
 .reviews {
