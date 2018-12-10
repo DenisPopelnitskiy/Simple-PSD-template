@@ -24,7 +24,7 @@ header {
 }
 
 .productName {
-    width: 500px;
+    width: 50%;
     float: left;
 }
 
@@ -51,13 +51,17 @@ h1 {
 }
 
 .headerListElement {
-    padding: 0;
+    /*margin-left: 4  0px;*/
     list-style: none;
+    list-style-image: url("../img/check icon.png");
+    list-style-position: inside;
 }
 
-.headerListElement:before {
+/*.headerListElement:before {
     content: url("../img/check icon.png"); /*как позиционировать текст и изображение?*/
-}
+    /*position: ansolute;
+    margin-left: -10px;
+}*/
 
 .headerImage {
     display: block;
@@ -166,6 +170,10 @@ summary::-webkit-details-marker {
 summary:before {
     content: url("../img/plus_icon.png");
     margin-right: 5px; 
+}
+
+summary {
+    outline: none;
 }
 
 .screenshots {
