@@ -149,6 +149,10 @@ video {
     margin-left: 91px;
 }
 
+details {
+    margin-bottom: 35px;
+}
+
 .pluses {
     font-family: "Arial";
     color: #333;
@@ -168,7 +172,8 @@ summary::-webkit-details-marker {
 
 summary:before {
     content: url("../img/plus_icon.png");
-    margin-right: 5px; 
+    margin-left: -40px;
+    position: absolute;
 }
 
 summary {
