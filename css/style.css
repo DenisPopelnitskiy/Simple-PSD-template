@@ -244,6 +244,9 @@ figcaption {
 .reviews {
     width: 100%;
     background-color: #f5f5f5;
+    padding-bottom: 27px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .reviews_header {
@@ -257,7 +260,61 @@ figcaption {
     line-height: 36px;
     padding-top: 50px;
     margin-bottom:35px;
+}
 
+article {
+    display: flex;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+.reviews_image {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color: #445161;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 28px;
+}
+
+blockquote {
+    width: 471px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+.review_paragraph {
+    font-family: "Arial";
+    color: #333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    padding: 16px 15px 15px 15px;
+}
+
+.signature {
+    font-family: "Arial";
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    padding: 0px 15px;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .buyItNow {
