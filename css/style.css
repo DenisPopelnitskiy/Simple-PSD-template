@@ -552,11 +552,22 @@ textarea[placeholder] {
     position: absolute;
 }
 
-.social {
-    display: block;
+.icons {
+    display: flex;
     width: 240px;
-    height: 40px;
-   background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.twitter_icon,
+.facebook_icon,
+.linkedin_icon,
+.google_icon,
+.youtube_icon {
+    background-color: white;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
 }
 
 footer {
