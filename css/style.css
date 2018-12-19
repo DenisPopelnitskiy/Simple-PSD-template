@@ -164,14 +164,37 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-summary:before {
+/*summary:before {
     content: url("../img/plus_icon.png");
     margin-left: -40px;
     position: absolute;
-}
+}*/
+
+summary:before {
+    content: "+"; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #445161;
+    color: #fff; 
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+  }
+  
+  details[open] summary:before {
+    content: "-";
+  }
 
 summary {
+    display: block;
     outline: none;
+    font-weight: bold;
+    position: relative;
 }
 
 .screenshots {
