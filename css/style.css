@@ -56,12 +56,6 @@ h1 {
     list-style-position: inside;
 }
 
-/*.headerListElement:before {
-    content: url("../img/check icon.png"); /*как позиционировать текст и изображение?*/
-    /*position: ansolute;
-    margin-left: -10px;
-}*/
-
 .headerImage {
     display: block;
     width: 469px;
@@ -403,6 +397,16 @@ button {
     display: block;
 }
 
+button:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+button:active {
+    background-color:  #ffffff;
+    color:  #445162;
+}
+
 .contacts {
     width: 100%;
     background-color: #445162;
@@ -513,7 +517,6 @@ textarea[placeholder] {
 .contacts_icons {
     width: 240px;
     height: 300px;
-    /*background-color: white;*/
 }
 
 .skype,
@@ -527,6 +530,14 @@ textarea[placeholder] {
     line-height: 24px;
     padding-bottom: 25px;
 }
+
+.skype:hover,
+.icq:hover,
+.email_address:hover,
+.phone_number:hover {
+    color: lightgray;
+}
+
 
 .skype:before {
     content: url("../img/skype icon.png");
@@ -569,6 +580,26 @@ textarea[placeholder] {
     width: 42px;
     border-radius: 50%;
 }
+
+.twitter_icon:hover,
+.facebook_icon:hover,
+.linkedin_icon:hover,
+.google_icon:hover,
+.youtube_icon:hover {
+    background-color: lightgray;
+}
+
+.fab {
+    color:  #445162;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.fab:hover {
+    color: white;
+}
+
 
 footer {
     width: 100%;
