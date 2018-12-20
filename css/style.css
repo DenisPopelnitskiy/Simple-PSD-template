@@ -602,6 +602,9 @@ textarea[placeholder] {
     height: 42px;
     width: 42px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .twitter_icon:hover,
@@ -615,8 +618,7 @@ textarea[placeholder] {
 .fab {
     color:  #445162;
     font-size: 25px;
-    padding-left: 10px;
-    padding-top: 7px;
+    padding: 0;
 }
 
 .fab:hover {
